@@ -13,4 +13,9 @@ class FizzBuzz
     end
   end
 
+  def has_three?(number)
+    number.include?['3']
+  end
+
 end
+
