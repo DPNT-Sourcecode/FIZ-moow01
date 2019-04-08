@@ -33,16 +33,16 @@ describe 'Fizz Buzz' do
     expect(FizzBuzz.new.fizz_buzz(234)).to eq('fizz deluxe')
   end
 
-  it 'returns buzz deluxe if divisible by 5 and contains 5' do
-    expect(FizzBuzz.new.fizz_buzz(234)).to eq('buzz deluxe')
+  it 'returns buzz deluxe if divisible by 5 and contains 5 and even' do
+    expect(FizzBuzz.new.fizz_buzz(250)).to eq('buzz deluxe')
   end
 
-  it 'returns fizz fake deluxe' do
-    expect(FizzBuzz.new.fizz_buzz(333)).to eq('fizz fake deluxe')
+  it 'returns fizz deluxe if divisible by 3 and contains 3 and but odd' do
+    expect(FizzBuzz.new.fizz_buzz(303)).to eq('fizz fake deluxe')
   end
 
-  it 'returns buzz fake deluxe' do
-    expect(FizzBuzz.new.fizz_buzz(5555)).to eq('buzz fake deluxe')
+  it 'returns buzz deluxe if divisible by 5 and contains 5 but odd' do
+    expect(FizzBuzz.new.fizz_buzz(505)).to eq('buzz fake deluxe')
   end
 
   it 'returns fizz buzz deluxe if all rules apply but odd' do
@@ -50,4 +50,5 @@ describe 'Fizz Buzz' do
   end
 
 end
+
 
