@@ -13,8 +13,5 @@ class FizzBuzz
     end
   end
 
-  def has_three?
-    self.index(3) != nil
-  end
-
 end
+
