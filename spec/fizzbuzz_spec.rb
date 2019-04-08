@@ -5,5 +5,3 @@ describe 'fizz_buzz' do
   expect(FizzBuzz.new.fizz_buzz(4)).to eq('4')
 end
 end
-
-
