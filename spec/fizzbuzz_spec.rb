@@ -41,9 +41,14 @@ describe 'Fizz Buzz' do
     expect(FizzBuzz.new.fizz_buzz(5555)).to eq('buzz fake deluxe')
   end
 
-  it 'returns fizz buzz deluxe if all rules apply' do
-  expect(FizzBuzz.new.fizz_buzz(555)).to eq('fizz buzz deluxe')
+  it 'returns fizz buzz deluxe if all rules apply but odd' do
+  expect(FizzBuzz.new.fizz_buzz(555)).to eq('fizz buzz fake deluxe')
+  end
+
+  it 'returns fizz buzz deluxe if all rules apply and even' do
+  expect(FizzBuzz.new.fizz_buzz()).to eq('fizz buzz deluxe')
   end
 end
+
 
 
