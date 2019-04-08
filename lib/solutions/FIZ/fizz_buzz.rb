@@ -6,7 +6,7 @@ class FizzBuzz
       return 'fizz buzz'
     elsif number.to_s.include?('3') || number % 3 == 0
       return 'fizz'
-    elsif to_s.include?('5') || number % 5 == 0
+    elsif number.to_s.include?('5') || number % 5 == 0
       return 'buzz'
     else
       return number.to_s
@@ -14,5 +14,6 @@ class FizzBuzz
   end
 
 end
+
 
 
