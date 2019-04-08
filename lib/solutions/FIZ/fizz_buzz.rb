@@ -16,9 +16,9 @@ class FizzBuzz
         return 'fizz deluxe'
     elsif  number > 10 && (number % 2 == 0) && (number.to_s.split('').uniq.count <= 1) && (number % 5 == 0 || number.to_s.include?('5'))
         return 'buzz deluxe'
-    elsif number > 10 && (number % 2 != 0) && ((number.to_s.split('').uniq.count <= 1))
+    elsif number > 10 && (number % 2 != 0) && ((number % 3 == 0 && number.to_s.include?('3')) || (number % 5 == 0 &&  number.to_s.include?('5')))
           return 'fake deluxe'
-    elsif number > 10 && (number % 2 == 0) && ((number % 3 == 0 && number.to_s.include?('3')) || (number % 5 == 0 || number.to_s.include?('5')))
+    elsif number > 10 && (number % 2 == 0) && ((number % 3 == 0 && number.to_s.include?('3')) || (number % 5 == 0 &&  number.to_s.include?('5')))
         return 'deluxe'
     elsif number % 3 == 0 || number.to_s.include?('3')
       return 'fizz'
@@ -30,4 +30,5 @@ class FizzBuzz
   end
 
 end
+
 
