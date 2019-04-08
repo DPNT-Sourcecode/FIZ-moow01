@@ -25,10 +25,6 @@ class ClientTest < Minitest::Test
   end
 
   def test_return_true_if_has_3
-    number = 13
-    assert number.has_three?
   end
 
 end
-
-
