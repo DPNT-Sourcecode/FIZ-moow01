@@ -6,20 +6,34 @@ describe 'Fizz Buzz' do
   end
 
   it 'returns fizz if divisible by 3' do
-  expect(FizzBuzz.new.fizz_buzz(30)).to eq('fizz')
+  expect(FizzBuzz.new.fizz_buzz(3)).to eq('fizz')
   end
 
   it 'returns buzz if divisible by 5' do
-  expect(FizzBuzz.new.fizz_buzz(50)).to eq('buzz')
+  expect(FizzBuzz.new.fizz_buzz(5)).to eq('buzz')
+  end
+
+  it 'returns fizz if has a digit that is 3' do
+    expect(FizzBuzz.new.fizz_buzz(223)).to eq('fizz')
+  end
+
+  it 'returns buzz if has a digit that is 5' do
+    expect(FizzBuzz.new.fizz_buzz(52)).to eq('buzz')
   end
 
   it 'returns deluxe if all digits are identical' do
   expect(FizzBuzz.new.fizz_buzz(11)).to eq('deluxe')
   end
 
+  it 'returns fizz deluxe' do
+    expect(FizzBuzz.new.fizz_buzz(333)).to eq('fizz deluxe')
+  end
+
+  it 'returns buzz deluxe' do
+    expect(FizzBuzz.new.fizz_buzz(555)).to eq('buzz deluxe')
+  end
+
   it 'returns fizz buzz deluxe if all rules apply' do
   expect(FizzBuzz.new.fizz_buzz(555)).to eq('fizz buzz deluxe')
   end
 end
-
-
