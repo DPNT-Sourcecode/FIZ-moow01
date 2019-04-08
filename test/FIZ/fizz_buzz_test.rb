@@ -24,14 +24,11 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(15)
   end
 
-  def test_return_true_if_has_3
-    assert FizzBuzz.new.has_three?(734)
-  end
-
   def test_return_fizz_if_has_3
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(734)
   end
 
 end
+
 
 
