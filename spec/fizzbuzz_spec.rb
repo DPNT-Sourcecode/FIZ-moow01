@@ -16,4 +16,9 @@ end
 it 'returns deluxe if all digits are identical' do
   expect(FizzBuzz.new.fizz_buzz(11)).to eq('deluxe')
 end
+
+  it 'returns fizz buzz delixe if all rules apply' do
+    expect(FizzBuzz.new.fizz_buzz(555)).to eq('fizz buzz deluxe')
+  end
 end
+
