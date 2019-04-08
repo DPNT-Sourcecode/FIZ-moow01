@@ -21,14 +21,6 @@ describe 'Fizz Buzz' do
     expect(FizzBuzz.new.fizz_buzz(52)).to eq('buzz')
   end
 
-  it 'returns deluxe if all digits are identical' do
-  expect(FizzBuzz.new.fizz_buzz(22)).to eq('deluxe')
-  end
-
-  it 'returns deluxe if all digits are identical' do
-  expect(FizzBuzz.new.fizz_buzz(11)).to eq('fake deluxe')
-  end
-
   it 'returns fizz deluxe if divisible by 3 and contains 3 and is even' do
     expect(FizzBuzz.new.fizz_buzz(234)).to eq('fizz deluxe')
   end
@@ -50,5 +42,6 @@ describe 'Fizz Buzz' do
   end
 
 end
+
 
 
