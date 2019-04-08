@@ -6,9 +6,9 @@ class FizzBuzz
       return 'fizz buzz deluxe'
     elsif number > 10 && (number.to_s.split('').uniq.count <= 1)
         return 'deluxe'
-    elsif number % 3 == 0 #|| number.to_s.include?('3')
+    elsif number % 3 == 0 || number.to_s.include?('3')
       return 'fizz'
-    elsif number % 5 == 0 #|| number.to_s.include?('5')
+    elsif number % 5 == 0 || number.to_s.include?('5')
       return 'buzz'
     else
       return number.to_s
@@ -16,4 +16,5 @@ class FizzBuzz
   end
 
 end
+
 
