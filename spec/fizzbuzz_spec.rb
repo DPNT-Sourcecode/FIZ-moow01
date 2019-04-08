@@ -12,5 +12,10 @@ end
 it 'returns buzz if divisible by 5' do
   expect(FizzBuzz.new.fizz_buzz(5)).to eq('buzz')
 end
+
+it 'returns deluxe if number is greater than 10' do
+  expect(FizzBuzz.new.fizz_buzz(11)).to eq('fizz buzz deluxe')
 end
+end
+
 
