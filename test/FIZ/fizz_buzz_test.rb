@@ -21,8 +21,9 @@ class ClientTest < Minitest::Test
   end
 
   def test_fizz_buzz_return_fizzbuzz
-    assert_equal 'fizzbuzz', FizzBuzz.new.fizz_buzz(15)
+    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(15)
   end
 
 end
+
 
