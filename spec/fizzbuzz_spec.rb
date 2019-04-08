@@ -46,7 +46,3 @@ describe 'Fizz Buzz' do
   end
   
 end
-
-
-
-
