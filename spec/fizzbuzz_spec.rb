@@ -6,11 +6,7 @@ describe 'Fizz Buzz' do
   end
 
   it 'returns fizz if divisible by 3' do
-  expect(FizzBuzz.new.fizz_buzz(3)).to eq('fizz')
-  end
-
-  it 'returns buzz if divisible by 5' do
-  expect(FizzBuzz.new.fizz_buzz(5)).to eq('buzz')
+  expect(FizzBuzz.new.fizz_buzz(12)).to eq('fizz')
   end
 
   it 'returns fizz if has a digit that is 3' do
@@ -30,11 +26,11 @@ describe 'Fizz Buzz' do
   end
 
   it 'returns fizz deluxe if divisible by 3 and contains 3 and but odd' do
-    expect(FizzBuzz.new.fizz_buzz(303)).to eq('fizz fake deluxe')
+    expect(FizzBuzz.new.fizz_buzz(3)).to eq('fizz fake deluxe')
   end
 
   it 'returns buzz deluxe if divisible by 5 and contains 5 but odd' do
-    expect(FizzBuzz.new.fizz_buzz(505)).to eq('buzz fake deluxe')
+    expect(FizzBuzz.new.fizz_buzz(5)).to eq('buzz fake deluxe')
   end
 
   it 'returns fizz buzz deluxe if all rules apply but odd' do
@@ -42,6 +38,3 @@ describe 'Fizz Buzz' do
   end
 
 end
-
-
-
