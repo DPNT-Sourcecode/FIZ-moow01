@@ -14,11 +14,6 @@ it 'returns buzz if divisible by 5' do
 end
 
 it 'returns deluxe if all digits are identical' do
-  expect(FizzBuzz.new.fizz_buzz(111)).to eq('fizz buzz deluxe')
+  expect(FizzBuzz.new.fizz_buzz(11)).to eq('deluxe')
 end
 end
-
-
-
-
-
