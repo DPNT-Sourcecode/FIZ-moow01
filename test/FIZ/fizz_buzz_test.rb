@@ -28,12 +28,18 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(734)
   end
 
-  def test_return_fizzbuzz_if_div_by_three_and_has_five
-    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(54)
+  def test_return_buzz_if_has_5
+    assert_equal 'buzz', FizzBuzz.new.fizz_buzz(151)
   end
 
-  def test_fizzbuzz_if_div_by_five_and_has_three
-    assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(35)
-  end
+
+  # def test_return_fizzbuzz_if_div_by_three_and_has_five
+  #   assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(54)
+  # end
+  #
+  # def test_fizzbuzz_if_div_by_five_and_has_three
+  #   assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(35)
+  # end
 
 end
+
