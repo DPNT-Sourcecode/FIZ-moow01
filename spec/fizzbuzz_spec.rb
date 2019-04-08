@@ -22,7 +22,11 @@ describe 'Fizz Buzz' do
   end
 
   it 'returns deluxe if all digits are identical' do
-  expect(FizzBuzz.new.fizz_buzz(11)).to eq('deluxe')
+  expect(FizzBuzz.new.fizz_buzz(22)).to eq('deluxe')
+  end
+
+  it 'returns deluxe if all digits are identical' do
+  expect(FizzBuzz.new.fizz_buzz(11)).to eq('fake deluxe')
   end
 
   it 'returns fizz deluxe' do
@@ -30,10 +34,11 @@ describe 'Fizz Buzz' do
   end
 
   it 'returns buzz deluxe' do
-    expect(FizzBuzz.new.fizz_buzz(555)).to eq('buzz deluxe')
+    expect(FizzBuzz.new.fizz_buzz(5555)).to eq('buzz deluxe')
   end
 
   it 'returns fizz buzz deluxe if all rules apply' do
   expect(FizzBuzz.new.fizz_buzz(555)).to eq('fizz buzz deluxe')
   end
 end
+
