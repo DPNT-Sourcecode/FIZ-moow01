@@ -25,7 +25,8 @@ class ClientTest < Minitest::Test
   end
 
   def test_return_true_if_has_3
-    assert_equal true, FuzzBuzz.new.fizz_buzz(13)
+    assert number = FizzBuzz.new(13)
   end
 
 end
+
