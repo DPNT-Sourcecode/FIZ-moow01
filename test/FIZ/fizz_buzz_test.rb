@@ -25,9 +25,10 @@ class ClientTest < Minitest::Test
   end
 
   def test_return_true_if_has_3
-    assert FizzBuzz.new.fizz_buzz(13).has_three?
+    assert FizzBuzz.new.fizz_buzz('13').has_three?
   end
 
 end
+
 
 
